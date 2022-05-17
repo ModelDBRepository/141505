@@ -2709,8 +2709,7 @@ static id0* lopr (Object *ob, unsigned int i) {
 }
 
 // use stoppo() as a convenient conditional breakpoint in gdb (gdb watching is too slow)
-int stoppo () {
-  return 0;
+void stoppo () {
 }
 
 //** ctt(ITEM#) find cells that exist by name
