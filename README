@@ -39,3 +39,4 @@ OPTIONS
 size, please adjust the hopefully-clearly-labeled parameters in runsim.
 
 20121210 Unused packages were removed from Python scripts.
+20220517 Edited infot.mod, intf_6.mod and misc.h to support NEURON versions <8.1.0, 8.2.0 and 9.0.0. -NEURON Developers
