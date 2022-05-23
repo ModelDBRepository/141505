@@ -41,6 +41,8 @@ NEURON {
 }
 
 VERBATIM
+#include "misc.h"
+
 #include <unistd.h>     /* F_OK     */
 #include <errno.h>      /* errno    */
 #include <signal.h>
@@ -48,7 +50,6 @@ VERBATIM
 #include <time.h>
 #include <stdio.h>
 #include <limits.h>
-extern int hoc_is_tempobj(int narg);
 ENDVERBATIM
 
 :* FUNCTION file_exist()
@@ -91,12 +92,13 @@ VERBATIM
 
     if( !(pipein = popen(syscall, "r"))) {
         fprintf(stderr,"System call failed\n");
-        return 0; // TODO: ask M
+        return 0;
     }
     
     if (fgets(string,BUFSIZ,pipein) == NULL) {
         fprintf(stderr,"System call did not return a string\n");
-        pclose(pipein); return 0; // TODO: ask M
+        pclose(pipein);
+        return 0;
     }
 
     /*  assign_hoc_str(strname, string, 0); */
