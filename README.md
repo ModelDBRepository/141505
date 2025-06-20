@@ -1,0 +1,48 @@
+This code generates the key results figures shown in
+
+Kerr CC, Neymotin SA, Chadderdon GL, Fietkiewicz CT, Francis JT, Lytton  
+WW (2012). Electrostimulation as a prosthesis for repair of information  
+flow in a computer model of neocortex. *IEEE Transactions on Neural  
+Systems & Rehabilitation Engineering* 20(2):153–60.
+
+# INSTALLATION
+
+Note: the code has been designed to work on Linux machines. It may work  
+on Macs and will definitely not work on Windows. If this is a problem,  
+please contact Cliff Kerr (cliffk@neurosim.downstate.edu) for assistance.
+
+## Dependencies:
+1. NEURON  
+2. Python  
+3. Pylab, SciPy, NumPy, and Matplotlib.
+
+## Instructions:
+
+1. Unzip all files (which it looks like you've already done).  
+2. Type `nrnivmodl *.mod` in the directory. This should create a  
+directory called either i686 or x86_64, depending on your computer's  
+architecture, and put a file called `special` in that directory.
+
+# USAGE
+
+1. Type `runsim`. Two graphs should appear, corresponding to the two  
+types of results figures in the paper.
+
+# OPTIONS
+
+- To adjust cortical vs. thalamic damage, simulation time, and model  
+size, please adjust the hopefully-clearly-labeled parameters in `runsim`.
+
+CHANGELOG
+
+20121210 Unused packages were removed from Python scripts.  
+20220517 Updated MOD files to contain valid C++ and be compatible with  
+         the upcoming versions 8.2 and 9.0 of NEURON. Updated to use  
+         post ~2011 signature of mcell_ran4_init function and fix  
+         hashseed2 argument.  
+20230420 Updated MOD files for compatibility with data structures in  
+         the upcoming version 9.0 of NEURON.
+
+---
+
+2025-06-20: Converted README to Markdown.
