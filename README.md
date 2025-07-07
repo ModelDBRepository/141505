@@ -36,10 +36,12 @@ size, please adjust the hopefully-clearly-labeled parameters in `runsim`.
 CHANGELOG
 
 20121210 Unused packages were removed from Python scripts.  
+
 20220517 Updated MOD files to contain valid C++ and be compatible with  
          the upcoming versions 8.2 and 9.0 of NEURON. Updated to use  
          post ~2011 signature of mcell_ran4_init function and fix  
          hashseed2 argument.  
+
 20230420 Updated MOD files for compatibility with data structures in  
          the upcoming version 9.0 of NEURON.
 
