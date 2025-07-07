@@ -43,6 +43,4 @@ CHANGELOG
 20230420 Updated MOD files for compatibility with data structures in  
          the upcoming version 9.0 of NEURON.
 
----
-
-2025-06-20: Converted README to Markdown.
+20250620 Converted README to Markdown.
